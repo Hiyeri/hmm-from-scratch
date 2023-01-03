@@ -1,6 +1,6 @@
 import numpy as np
 
-from .hmc_naive import HiddenMarkovChain
+from .hmc import HiddenMarkovChain
 
 
 class HiddenMarkovChain_FP(HiddenMarkovChain):
