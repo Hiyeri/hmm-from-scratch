@@ -1,4 +1,4 @@
-from hmm_from_scratch.model.probabilities import ProbabilityVector
+from hmm_from_scratch.model import ProbabilityVector
 
 a1 = ProbabilityVector({'rain': 0.7, 'sun': 0.3})
 a2 = ProbabilityVector({'sun:': 0.1, 'rain': 0.9})
