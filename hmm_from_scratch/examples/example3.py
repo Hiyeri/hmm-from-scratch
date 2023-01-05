@@ -34,3 +34,4 @@ print("Score for {} is {:f}.".format(observations, hmc.score(observations)))
 hmc_fp = HiddenMarkovChain_FP(A, B, pi)
 observations = ['1S', '2M', '3L', '2M', '1S']
 print("Score for {} is {:f}.".format(observations, hmc_fp.score(observations)))
+
