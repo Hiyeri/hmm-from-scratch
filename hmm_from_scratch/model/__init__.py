@@ -1,4 +1,5 @@
 from .probabilities import (ProbabilityVector, ProbabilityMatrix)
 from .hmc import HiddenMarkovChain
-from .hmc_fp import HiddenMarkovChain_FP
+from .hmc_forward import HiddenMarkovChain_FP
 from .hmc_simulation import HiddenMarkovChain_Simulation
+from .hmc_backward import HiddenMarkovChain_Backward

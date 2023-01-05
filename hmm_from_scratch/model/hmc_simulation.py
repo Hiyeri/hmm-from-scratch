@@ -10,6 +10,8 @@ class HiddenMarkovChain_Simulation(HiddenMarkovChain):
 
         prb = self.pi.values
         obs = prb @ self.B.values
+        print(f"States: {self.states}, Observables: {self.observables}")
+        print(f"prb: {prb.flatten()}, obs: {obs}")
         s_history[0] = np.random.choice(self.states, p=prb.flatten())
         o_history[0] = np.random.choice(self.observables, p=obs.flatten())
 
@@ -18,5 +20,4 @@ class HiddenMarkovChain_Simulation(HiddenMarkovChain):
             obs = prb @ self.B.values
             s_history[t] = np.random.choice(self.states, p=prb.flatten())
             o_history[t] = np.random.choice(self.observables, p=obs.flatten())
-
         return o_history, s_history
