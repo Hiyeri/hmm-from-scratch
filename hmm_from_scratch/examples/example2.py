@@ -1,3 +1,4 @@
+# probability matrix
 from hmm_from_scratch.model import ProbabilityVector, ProbabilityMatrix
 
 a1 = ProbabilityVector({'rain': 0.7, 'sun': 0.3})

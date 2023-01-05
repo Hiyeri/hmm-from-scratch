@@ -1,3 +1,4 @@
+# hidden markov chain
 from hmm_from_scratch.model import ProbabilityVector, ProbabilityMatrix, HiddenMarkovChain, HiddenMarkovChain_FP
 
 a1 = ProbabilityVector({'1H': 0.7, '2C': 0.3})

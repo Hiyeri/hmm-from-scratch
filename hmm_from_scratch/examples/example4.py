@@ -1,3 +1,4 @@
+# hmm simulation
 from hmm_from_scratch.model import ProbabilityVector, ProbabilityMatrix, HiddenMarkovChain, HiddenMarkovChain_Simulation
 import pandas as pd
 import matplotlib.pyplot as plt
