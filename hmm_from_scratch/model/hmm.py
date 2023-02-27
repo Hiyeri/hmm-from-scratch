@@ -23,11 +23,9 @@ class HiddenMarkovModel:
 
         L = len(alpha)
         obs_idx = [self.layer.observables.index(x) for x in observations]
-        print(obs_idx)
         capture = np.zeros((L, len(self.layer.states), len(self.layer.observables)))
         for t in range(L):
             capture[t, :, obs_idx[t]] = 1.0
-        print(capture)
 
         pi = gamma[0]
         A = xi.sum(axis=0) / gamma[:-1].sum(axis=0).reshape(-1, 1)
